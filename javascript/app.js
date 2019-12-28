@@ -10,7 +10,7 @@ colorchange([
     './img/map_red.png',
     './img/map_green.png',
     './img/map_pink.png'
-])
+]);
 
 jQuery(document).ready(function () {
     $('.title-blue').mouseout(function(){
