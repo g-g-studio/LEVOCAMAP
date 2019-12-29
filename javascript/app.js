@@ -12,6 +12,8 @@ colorchange([
     './img/map_pink.png'
 ]);
 
+//jQuery na hover
+
 jQuery(document).ready(function () {
     $('.title-blue').mouseout(function(){
         $("#map").attr('src', 'img/map_original.png');
