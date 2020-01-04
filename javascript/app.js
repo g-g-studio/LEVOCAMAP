@@ -12,11 +12,7 @@ colorchange([
     './img/map_pink.png'
 ]);
 
-<<<<<<< HEAD
-//jQuery na hover buttnov
-=======
 //jQuery na hover
->>>>>>> 4cb68d60ce39370648b554385e671a5c99fb3b9b
 
 jQuery(document).ready(function () {
     $('.title-blue').mouseout(function(){
