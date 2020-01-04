@@ -38,10 +38,11 @@ div.title {
 }
 
 .title li a:hover {
-  color: #000000;
-  border: 1px solid #000000;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
   background-color: #FFFFFF;
-  font-weight: bold;*/
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 
@@ -50,7 +51,7 @@ div.image {
 }
 
 .image img {
-  width: 50%;
+  max-width: 1500px;
 }
 
 footer {
@@ -65,4 +66,8 @@ footer {
     display: block;
     margin: 30px 0px;
   }
+  .image img {
+    width:50%;
+  }
+
 }
