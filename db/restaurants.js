@@ -1,7 +1,7 @@
 let restaurants = [
 	{
 		name: 'Restauracia u Leva',
-		adress: 'NÁM. MAJSTRA PAVLA 25',
+		address: 'NÁM. MAJSTRA PAVLA 25',
 		rating: '4.5',
 		hours: '10AM - 10PM',
 		img: 'https://r-cf.bstatic.com/images/hotel/max1024x768/710/71042801.jpg',
@@ -12,7 +12,7 @@ let restaurants = [
 	},
 	{
 		name: 'Restauracia Kupecka Basta',
-		adress: 'Kukucinova 2, Levoča 054 01',
+		address: 'Kukucinova 2, Levoča 054 01',
 		rating: '4.5',
 		hours: '10AM - 10PM',
 		img: 'https://m.smedata.sk/api-media/media/image/sme/3/28/2801333/2801333_1200x.jpeg?rev=3',
@@ -23,7 +23,7 @@ let restaurants = [
 	},
 	{
 		name: 'Restauracia u 3 Apostolov',
-		adress: 'Námestie Majstra Pavla 11',
+		address: 'Námestie Majstra Pavla 11',
 		rating: '4.1',
 		hours: '9AM - 8PM',
 		img: 'https://lh5.googleusercontent.com/p/AF1QipONIuk6v5x0DFHTXAzZdJqvtsQ_h9qLHbqJZipl=w408-h306-k-no',
@@ -34,7 +34,7 @@ let restaurants = [
 	},
 	{
 		name: 'Reštuarácia Pracháreň',
-		adress: 'Hradby 3143, 054 01 Levoča',
+		address: 'Hradby 3143, 054 01 Levoča',
 		rating: '4.3',
 		hours: '!NOT DECLARED!',
 		img: 'https://www.pracharen.sk/uploads/slideshow/1/slide3.jpg',
@@ -45,7 +45,7 @@ let restaurants = [
 	},
 	{
 		name: 'Reštuarácia U Janusa',
-		adress: 'Kláštorská 22, 054 01 Levoča',
+		address: 'Kláštorská 22, 054 01 Levoča',
 		rating: '4.5',
 		hours: '12PM - 10PM',
 		img: 'https://www.kiskatravel.sk/swift_data/source/objekty/obrazky/11/2233_107381_64455749.jpg',
@@ -56,7 +56,7 @@ let restaurants = [
 	},
 	{
 		name: 'Stela',
-		adress: 'Namestie Majstra Pavla 55',
+		address: 'Namestie Majstra Pavla 55',
 		rating: '4',
 		hours: '!NOT DECLARED!',
 		img: 'http://www.hotelstela.sk/wp-content/uploads/2018/01/1.jpg',
@@ -67,7 +67,7 @@ let restaurants = [
 	},
 	{
 		name: 'Arkada',
-		adress: 'Namestie Majstra Pavla 26',
+		address: 'Namestie Majstra Pavla 26',
 		rating: '3',
 		hours: '!NOT DECLARED!',
 		img: 'https://www.arkada.sk/wp-content/uploads/2015/11/ARKADA3hviezdynova.jpg',
@@ -78,7 +78,7 @@ let restaurants = [
 	},
 	{
 		name: 'Restauracia Slovenka',
-		adress: 'Námestie Majstra Pavla 6/6',
+		address: 'Námestie Majstra Pavla 6/6',
 		rating: '3.6',
 		hours: '10AM - 9PM',
 		img:
@@ -99,7 +99,7 @@ ${restaurants
         <div class='text'>
             <i class='fas fa-map-marker-alt'></i>
             <a href='${restaurant.maps}' class='map-link'
-            <p class='adress'>${restaurant.adress}</p></a>
+            <p class='adress'>${restaurant.address}</p></a>
             <p class='rating-line'><i class="fas fa-star"></i>GOOGLE.COM RATING: <span class='rating'>${restaurant.rating}</span></p>
             <p class='prices'><i class="fas fa-dollar-sign"></i> ${restaurant.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
             <p class='clock'><i class="fas fa-clock"></i>${restaurant.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
