@@ -110,7 +110,7 @@ ${restaurants
 
 			<div class="row">
 				<i class="fas fa-dollar-sign"></i> 
-				<p class='prices'>${restaurant.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+				<p class='prices'>${restaurant.prices}</p>
 			</div>
 
 			<div class="row">
