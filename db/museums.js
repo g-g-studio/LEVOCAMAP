@@ -7,7 +7,7 @@ let museums = [
 		hours: '9AM - 5PM',
 		phone: '053/451 27 86',
 		web: 'https://www.snm.sk/?spisske-muzeum-o-muzeu',
-		img: 'https://i.imgur.com/lT0DeeZ.png'
+		img: '/img/thumbnails/spisske.png'
 	},
 	{
 		name: 'Dom Majstra Pavla (House of Master Pavol)',
@@ -17,7 +17,7 @@ let museums = [
 		hours: '8AM - 5PM',
 		phone: '053/451 24 49',
 		web: 'https://www.snm.sk/?dom-majstra-pavla-uvodna-stranka',
-		img: 'https://i.imgur.com/wwHWxYS.png'
+		img: '/img/thumbnails/pavol.png'
 	},
 	{
 		name: 'Múzeum špeciálneho školstva v Levoči',
@@ -27,7 +27,7 @@ let museums = [
 		hours: '8AM - 4PM',
 		phone: '053/451 28 63',
 		web: 'https://msslevoca.sk/?lang=en',
-		img: 'https://i.imgur.com/r1ryHgp.png'
+		img: '/img/thumbnails/skolstva.png'
 	}
 ];
 
