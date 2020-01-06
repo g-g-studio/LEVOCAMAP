@@ -1,7 +1,7 @@
 let restaurants = [
 	{
 		name: 'Restauracia u Leva',
-		address: 'NÁM. MAJSTRA PAVLA 25',
+		address: 'Nám. Majstra Pavla 25',
 		rating: '4.5',
 		hours: '10AM - 10PM',
 		img: 'https://r-cf.bstatic.com/images/hotel/max1024x768/710/71042801.jpg',
@@ -93,14 +93,14 @@ document.getElementById('db').innerHTML = `
 ${restaurants
 	.map(function(restaurant) {
 		return `
-		<div class='container'>
+		<div class='container2'>
         <img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
         <h1 class='name'>${restaurant.name}</h1>
         <div class='text'>
             <div class="row"> 
-			<i class='fas fa-map-marker-alt'></i>
-            <a href='${restaurant.maps}' class='map-link'>
-			<p class='adress'>${restaurant.address}</p>
+				<i class='fas fa-map-marker-alt'></i>
+            	<a href='${restaurant.maps}' class='map-link'>
+				<p class='adress'>${restaurant.address}</p>
 			</a>
             </div>
 
