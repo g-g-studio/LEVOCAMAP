@@ -4,7 +4,7 @@ let restaurants = [
 		address: 'Nám. Majstra Pavla 25',
 		rating: '4.5',
 		hours: '10AM - 10PM',
-		img: 'https://r-cf.bstatic.com/images/hotel/max1024x768/710/71042801.jpg',
+		img: 'https://i.imgur.com/wUGArHn.jpg',
 		web: 'https://www.uleva.sk',
 		prices: '€€ - €€€',
 		maps:
@@ -15,7 +15,7 @@ let restaurants = [
 		address: 'Kukucinova 2, Levoča 054 01',
 		rating: '4.5',
 		hours: '10AM - 10PM',
-		img: 'https://m.smedata.sk/api-media/media/image/sme/3/28/2801333/2801333_1200x.jpeg?rev=3',
+		img: 'https://i.imgur.com/zjz2HTX.png',
 		web: 'http://www.kupeckabasta.sk/',
 		maps:
 			'https://www.google.com/maps/place/Kupeck%C3%A1+Ba%C5%A1ta/@49.0261489,20.5930484,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468a59f74ef5:0x45e232282d474e2e!8m2!3d49.0261489!4d20.5930484',
@@ -26,7 +26,7 @@ let restaurants = [
 		address: 'Námestie Majstra Pavla 11',
 		rating: '4.1',
 		hours: '9AM - 8PM',
-		img: 'https://lh5.googleusercontent.com/p/AF1QipONIuk6v5x0DFHTXAzZdJqvtsQ_h9qLHbqJZipl=w408-h306-k-no',
+		img: 'https://i.imgur.com/KN8hMPJ.png',
 		web: 'http://www.restauraciau3apostolov.sk',
 		prices: '€€',
 		maps:
@@ -37,7 +37,7 @@ let restaurants = [
 		address: 'Hradby 3143, 054 01 Levoča',
 		rating: '4.3',
 		hours: '!NOT DECLARED!',
-		img: 'https://www.pracharen.sk/uploads/slideshow/1/slide3.jpg',
+		img: 'https://i.imgur.com/XKxPr9z.png',
 		web: 'https://www.pracharen.sk',
 		prices: '€€ - €€€',
 		maps:
@@ -48,7 +48,7 @@ let restaurants = [
 		address: 'Kláštorská 22, 054 01 Levoča',
 		rating: '4.5',
 		hours: '12PM - 10PM',
-		img: 'https://www.kiskatravel.sk/swift_data/source/objekty/obrazky/11/2233_107381_64455749.jpg',
+		img: 'https://i.imgur.com/gfqQxDq.png',
 		web: 'http://ujanusa.sk/',
 		prices: '€',
 		maps:
@@ -59,7 +59,7 @@ let restaurants = [
 		address: 'Namestie Majstra Pavla 55',
 		rating: '4',
 		hours: '!NOT DECLARED!',
-		img: 'http://www.hotelstela.sk/wp-content/uploads/2018/01/1.jpg',
+		img: 'https://i.imgur.com/eX0Nq0V.png',
 		web: 'http://www.hotelstela.sk/',
 		prices: '€€ - €€€',
 		maps:
@@ -70,7 +70,7 @@ let restaurants = [
 		address: 'Namestie Majstra Pavla 26',
 		rating: '3',
 		hours: '!NOT DECLARED!',
-		img: 'https://www.arkada.sk/wp-content/uploads/2015/11/ARKADA3hviezdynova.jpg',
+		img: 'https://i.imgur.com/w3R1EJW.png',
 		web: 'http://www.arkada.sk/',
 		prices: '€€ - €€€',
 		maps:
@@ -82,8 +82,7 @@ let restaurants = [
 		rating: '3.6',
 		hours: '10AM - 9PM',
 		img:
-			'https://lh3.googleusercontent.com/CMFQk0_O-DDXlTBCaZmP9TDMwL8PkFRjWNUX8sE-TRJpLtHyKmElsCAGUlMCqTGmhyB50bDD=w768-h432-p-no-v0',
-		web: 'https://restauraciaslovenka.business.site/',
+			'https://i.imgur.com/okXNZ6s.png',
 		prices: '€€ - €€€',
 		maps:
 			'https://www.google.com/maps/place/Re%C5%A1taur%C3%A1cia+Slovenka/@49.027669,20.5904705,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468b292cbb39:0xd4dc0fbbbd7f1cc1!8m2!3d49.027669!4d20.5904705'
@@ -111,7 +110,7 @@ ${restaurants
 
 			<div class="row">
 				<i class="fas fa-dollar-sign"></i> 
-				<p class='prices'>${restaurant.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+				<p class='prices'>${restaurant.prices}</p>
 			</div>
 
 			<div class="row">
