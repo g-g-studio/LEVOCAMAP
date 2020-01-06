@@ -10,7 +10,7 @@ let hotels = [
 		maps:
 			'https://www.google.com/maps/place/Hotel+U+Leva/@49.032783,20.590877,15z/data=!4m8!3m7!1s0x0:0x4c88e8a0767b811f!5m2!4m1!1i2!8m2!3d49.0253985!4d20.5894422?hl=en-US',
 		web: 'https://www.uleva.sk',
-		img: 'https://r-cf.bstatic.com/images/hotel/max1024x768/710/71042801.jpg',
+		img: 'https://i.imgur.com/wUGArHn.jpg',
 		prices: '43€ - 99€'
 	},
 	{
@@ -20,7 +20,7 @@ let hotels = [
 		maps:
 			'https://www.google.com/maps/place/Hotel+STELA/@49.027304,20.5870073,17z/data=!3m1!4b1!4m8!3m7!1s0x473e46f52ca1046d:0x850c2ebf93b0ed3c!5m2!4m1!1i2!8m2!3d49.027304!4d20.589196?hl=sks://www.google.com/maps/place/Hotel+Arkada/@49.025307,20.5870453,17z/data=!3m1!4b1!4m8!3m7!1s0x473e468aa59baf07:0x9413900393a17931!5m2!4m1!1i2!8m2!3d49.025307!4d20.589234?hl=en',
 		web: 'http://www.arkada.sk/',
-		img: 'https://www.arkada.sk/wp-content/uploads/2015/11/ARKADA3hviezdynova.jpg',
+		img: 'https://i.imgur.com/w3R1EJW.png',
 		prices: '37€ - 66€'
 	},
 	{
@@ -30,7 +30,7 @@ let hotels = [
 		maps:
 			'https://www.google.com/maps/place/Hotel+STELA/@49.027304,20.5870073,17z/data=!3m1!4b1!4m8!3m7!1s0x473e46f52ca1046d:0x850c2ebf93b0ed3c!5m2!4m1!1i2!8m2!3d49.027304!4d20.589196?hl=en',
 		web: 'http://www.hotelstela.sk/',
-		img: 'http://www.hotelstela.sk/wp-content/uploads/2018/01/1.jpg',
+		img: 'https://i.imgur.com/eX0Nq0V.png',
 		prices: '52€ - 83€'
 	},
 	{

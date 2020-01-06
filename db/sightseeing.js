@@ -4,7 +4,7 @@ let monuments = [
         address: 'Namestie Majstra Pavla 1',
         hours: 'Every 45 minutes from 11:15 to 19:15, available only during summer',
         prices: 'Free but you have to get reservation in tower before',
-        img: 'https://scontent.fbts4-1.fna.fbcdn.net/v/t31.0-8/p960x960/20023903_1942961885986767_9023891213425105432_o.jpg?_nc_cat=110&_nc_ohc=EoVgQgrqXooAQlbgghDAQVpfVv_-IcN1InECxLYn_wBvJgAUkvil4TiIg&_nc_ht=scontent.fbts4-1.fna&oh=cc2adfc19f35f1c3f4a8fc72e0c0d972&oe=5E97DE30',
+        img: 'https://i.imgur.com/iVAZAi0.png',
         maps: 'https://www.google.com/maps/place/Ve%C5%BEa+Baziliky+Sv.+Jakuba/@49.0264575,20.5882221,19z/data=!4m8!1m2!2m1!1sVeza+kostol+sv+jakuba!3m4!1s0x0:0x24d0760154c671ad!8m2!3d49.026439!4d20.5887559',
         web:'https://www.facebook.com/vezavlevoci/'
     },
@@ -13,7 +13,7 @@ let monuments = [
         address: 'Námestie Majstra Pavla 53',
         hours: '30 min lecture every hour, more details on web',
         prices: '2€ - 3€',
-        img: 'https://tatrytravel.sk/wp-content/uploads/2018/06/05-23-1400x933.jpg',
+        img: 'https://i.imgur.com/R4U0CyC.png',
         maps: 'https://www.google.com/maps/place/Bazilika+sv.+Jakuba/@49.0263194,20.5870016,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468ace115bfb:0xe9a3b36579a2def8!8m2!3d49.0263159!4d20.5891903',
         web:'http://www.chramsvjakuba.sk/'
     },
@@ -22,7 +22,7 @@ let monuments = [
         address: 'Mariánska Hora 1118/2, 054 01 Levoča',
         hours: 'Only on masses',
         prices: '0€',
-        img: 'https://m.smedata.sk/api-media/media/image/sme/3/28/2880033/2880033_1200x.jpeg?rev=3',
+        img: 'https://i.imgur.com/t8SJvfY.png',
         maps: 'https://www.google.com/maps/place/Bazilika+Nav%C5%A1t%C3%ADvenia+Panny+M%C3%A1rie/@49.0433803,20.5955635,17z/data=!3m1!4b1!4m5!3m4!1s0x473e46ea62d69bf9:0xe8e53feacd0bd359!8m2!3d49.0433768!4d20.5977522',
         web:'http://rkc.levoca.sk/k_marianskahora.html'
     },
@@ -31,7 +31,7 @@ let monuments = [
         address: 'Namestie Majstra Pavla 4',
         hours: '9AM - 5PM',
         prices: '0€ - 5€',
-        img: 'http://www.spisskemuzeum.com/images/radnica.JPG',
+        img: 'https://i.imgur.com/Bggk7Td.png',
         maps: 'https://www.google.com/maps/place/Levo%C4%8Dsk%C3%A1+radnica/@49.0258093,20.5864753,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468ab3b6b39f:0x72046a407ad26bcb!8m2!3d49.0258058!4d20.5886641',
         web:'http://www.spisskemuzeum.com/radnica.html'
     },
@@ -40,7 +40,7 @@ let monuments = [
         address: 'Namestie Majstra Pavla 7',
         hours: 'Not available from inside',
         prices: '-€',
-        img: 'https://mapio.net/images-p/912691.jpg',
+        img: 'https://i.imgur.com/x8xPeMr.png',
         maps: 'https://www.google.com/maps/place/Thurzov+Dom/@49.0270096,20.5884878,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468ad945ab6f:0x56cce649500b9199!8m2!3d49.0270061!4d20.5906765',
         web:'http://www.vypadni.sk/sk/thurzov-dom-v-levoci'
     },
@@ -49,7 +49,7 @@ let monuments = [
         address: 'Námestie Majstra Pavla 2/2',
         hours: 'Available all the time',
         prices: '-€',
-        img: 'https://www.krasneslovensko.eu/imgtemp/5be94d4f742.JPG',
+        img: 'https://i.imgur.com/FIAulFz.png',
         maps: 'https://www.google.com/maps/place/Klietka+hanby/@49.0255177,20.5865101,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468ab39323bd:0xd2d6863e0f0a8b70!8m2!3d49.0255142!4d20.5886988',
         web:'http://slovakianguide.com/sk/klietka-hanby-v-levoci'
     }
