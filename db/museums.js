@@ -35,17 +35,28 @@ document.getElementById('db').innerHTML = `
 ${museums
 	.map(function(museum) {
 		return `
-    <div class='container'>
-        <img src='${museum.img}' alt='Image of ${museum.name}'class='image'>
-        <div class='text'>
-            <h1 class='name'>${museum.name}</h1>
-            <i class='fas fa-map-marker-alt'></i>
-            <a href='${museum.maps}' class='map-link'
-            <p class='adress'>${museum.address}</p></a>
-            <p class='clock'><i class="fas fa-clock"></i>${museum.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
-            <p class='phone'><i class="fas fa-phone"></i>${museum.phone}</p>
-            <a class='web' href='${museum.web}'>Web</a>
+		<div class='container'>
+		<img src='${museum.img}' alt='Image of ${museum.name}'class='image'>
+		<h1 class='name'>${museum.name}</h1>
+		<div class='text'>
+            <div class="row"> 
+				<i class='fas fa-map-marker-alt'></i>
+            	<a href='${museum.maps}' class='map-link'>
+				<p class='adress'>${museum.address}</p></a>
+                </a>
+            </div>
+
+			<div class="row">
+				<i class="fas fa-clock"></i>
+				<p class='clock'>${museum.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
+            </div>
+
+			<div class="row">
+			<i class="fas fa-phone"></i>
+			<p class='phone'>${museum.phone}</p>
+            </div>
         </div>
+        <a class='web' href='${museum.web}'>Web</a>
     </div>
     `;
 	})

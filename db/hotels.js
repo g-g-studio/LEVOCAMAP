@@ -40,7 +40,7 @@ let hotels = [
 		maps:
 			'https://www.google.com/maps/place/Barbakan/@49.0275529,20.5899101,17z/data=!3m1!4b1!4m8!3m7!1s0x473e468b195c93a1:0x21d9f37ecc6e88d9!5m2!4m1!1i2!8m2!3d49.0275529!4d20.5920988?hl=en',
 		web: 'https://www.barbakan.sk/',
-		img: 'http://www.barbakan.sk/userfiles/image/gallery/hotel01h.jpg',
+		img: 'https://i.imgur.com/8O0cU2j.png',
 		prices: '32€ - 85€'
 	}
 ];
@@ -53,13 +53,26 @@ ${hotels
 	.map(function(hotel) {
 		return `
     <div class='container'>
-        <img src='${hotel.img}' alt='Image of ${hotel.name}'class='image'>
+        <img src='${hotel.img}' alt='Image of ${hotel.name}'class='image' id='${hotel.id}'>
         <h1 class='name'>${hotel.name}</h1>
-        <i class='fas fa-map-marker-alt'></i>
-        <a href='${hotel.maps}' class='map-link'
-        <p class='adress'>${hotel.address}</p></a>
-        <p class='rating-line'><i class="fas fa-star"></i>Booking.com rating: <span class='rating'>${hotel.rating}</span></p>
-        <p class='prices'> <i class="fas fa-dollar-sign"></i> ${hotel.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+        <div class='text'>
+            <div class="row"> 
+                <i class='fas fa-map-marker-alt'></i>
+                <a href='${hotel.maps}' class='map-link'>
+                <p class='adress'>${hotel.address}</p>
+                </a>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-star"></i>
+                <p class='rating-line'>Booking.com rating: <span class='rating'>${hotel.rating}</span></p>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-dollar-sign"></i>
+                <p class='prices'> ${hotel.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+            </div>
+        </div>
         <a class='web' href='${hotel.web}'>Web</a>
     </div>
     `;

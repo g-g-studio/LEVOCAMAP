@@ -92,18 +92,34 @@ document.getElementById('db').innerHTML = `
 ${restaurants
 	.map(function(restaurant) {
 		return `
-    <div class='container'>
+		<div class='container'>
         <img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
         <h1 class='name'>${restaurant.name}</h1>
         <div class='text'>
-            <i class='fas fa-map-marker-alt'></i>
-            <a href='${restaurant.maps}' class='map-link'
-            <p class='adress'>${restaurant.address}</p></a>
-            <p class='rating-line'><i class="fas fa-star"></i>GOOGLE.COM RATING: <span class='rating'>${restaurant.rating}</span></p>
-            <p class='prices'><i class="fas fa-dollar-sign"></i> ${restaurant.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
-            <p class='clock'><i class="fas fa-clock"></i>${restaurant.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
-            <a class='web' href='${restaurant.web}'>Web</a>
+            <div class="row"> 
+			<i class='fas fa-map-marker-alt'></i>
+            <a href='${restaurant.maps}' class='map-link'>
+			<p class='adress'>${restaurant.address}</p>
+			</a>
+            </div>
+
+			<div class="row">
+				<i class="fas fa-star"></i>
+				<p class='rating-line'>GOOGLE.COM RATING: <span class='rating'>${restaurant.rating}</span></p>
+            </div>
+
+			<div class="row">
+				<i class="fas fa-dollar-sign"></i> 
+				<p class='prices'>${restaurant.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+			</div>
+
+			<div class="row">
+				<i class="fas fa-clock"></i>
+				<p class='clock'>${restaurant.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
+			</div>
+
         </div>
+        <a class='web' href='${restaurant.web}'>Web</a>
     </div>
     `;
 	})

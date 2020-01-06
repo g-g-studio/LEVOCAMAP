@@ -29,16 +29,23 @@ document.getElementById('db').innerHTML = `
 ${offices
 	.map(function(office) {
 		return `
-    <div class='container'>
+        <div class='container'>
         <img src='${office.img}' alt='Image of ${office.name}'class='image'>
+        <h1 class='name'>${office.name}</h1>
         <div class='text'>
-            <h1 class='name'>${office.name}</h1>
-            <i class='fas fa-map-marker-alt'></i>
-            <a href='${office.maps}' class='map-link'
-            <p class='adress'>${office.address}</p></a>
-            <p class='phone'><i class="fas fa-phone"></i>${office.phone}</p>
-            <a class='web' href='${office.web}'>Web</a>
+            <div class="row"> 
+                <i class='fas fa-map-marker-alt'></i>
+                <a href='${office.maps}' class='map-link'>
+                <p class='adress'>${office.address}</p>
+                </a>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-phone"></i>
+                 <p class='phone'>${office.phone}</p>
+            </div>
         </div>
+        <a class='web' href='${office.web}'>Web</a>
     </div>
     `;
 	})
