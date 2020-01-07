@@ -20,7 +20,7 @@ body {
   div.container{
       background-color: #ffffff;
       max-width: 80%;
-      height: 33vh;/*250px;*/ 
+      height: 33vh;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 10px;
@@ -30,8 +30,8 @@ body {
 
   .container img {
     float: left;
-    max-width: 35%;
-    /*max-height: 100%;*/
+    max-width: 100%;
+    max-height: 100%;
   }
 
   #arkada {
@@ -109,4 +109,31 @@ body {
     font-size: 12px;
     color: rgb(255, 255, 255, .9);
     padding-top: 30px;
+  }
+
+  @media (max-width: 1050px) {
+    div.container {
+      height: auto;
+      overflow: hidden;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .container h1 {
+      font-size: 25px;
+    }
+
+    .container img {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+
+    .row p {
+      font-size: 15px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+    }
   }

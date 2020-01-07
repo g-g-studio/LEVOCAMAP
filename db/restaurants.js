@@ -4,7 +4,7 @@ let restaurants = [
 		address: 'Nám. Majstra Pavla 25',
 		rating: '4.5',
 		hours: '10AM - 10PM',
-		img: 'https://i.imgur.com/wUGArHn.jpg',
+		img: '/img/thumbnails/uleva.jpg',
 		web: 'https://www.uleva.sk',
 		prices: '€€ - €€€',
 		maps:
@@ -15,7 +15,7 @@ let restaurants = [
 		address: 'Kukucinova 2, Levoča 054 01',
 		rating: '4.5',
 		hours: '10AM - 10PM',
-		img: 'https://i.imgur.com/zjz2HTX.png',
+		img: '/img/thumbnails/basta.png',
 		web: 'http://www.kupeckabasta.sk/',
 		maps:
 			'https://www.google.com/maps/place/Kupeck%C3%A1+Ba%C5%A1ta/@49.0261489,20.5930484,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468a59f74ef5:0x45e232282d474e2e!8m2!3d49.0261489!4d20.5930484',
@@ -26,7 +26,7 @@ let restaurants = [
 		address: 'Námestie Majstra Pavla 11',
 		rating: '4.1',
 		hours: '9AM - 8PM',
-		img: 'https://i.imgur.com/KN8hMPJ.png',
+		img: '/img/thumbnails/apostol.png',
 		web: 'http://www.restauraciau3apostolov.sk',
 		prices: '€€',
 		maps:
@@ -37,7 +37,7 @@ let restaurants = [
 		address: 'Hradby 3143, 054 01 Levoča',
 		rating: '4.3',
 		hours: '!NOT DECLARED!',
-		img: 'https://i.imgur.com/XKxPr9z.png',
+		img: '/img/thumbnails/poracharen.png',
 		web: 'https://www.pracharen.sk',
 		prices: '€€ - €€€',
 		maps:
@@ -48,7 +48,7 @@ let restaurants = [
 		address: 'Kláštorská 22, 054 01 Levoča',
 		rating: '4.5',
 		hours: '12PM - 10PM',
-		img: 'https://i.imgur.com/gfqQxDq.png',
+		img: '/img/thumbnails/janus.png',
 		web: 'http://ujanusa.sk/',
 		prices: '€',
 		maps:
@@ -59,7 +59,7 @@ let restaurants = [
 		address: 'Namestie Majstra Pavla 55',
 		rating: '4',
 		hours: '!NOT DECLARED!',
-		img: 'https://i.imgur.com/eX0Nq0V.png',
+		img: '/img/thumbnails/stela.png',
 		web: 'http://www.hotelstela.sk/',
 		prices: '€€ - €€€',
 		maps:
@@ -70,7 +70,7 @@ let restaurants = [
 		address: 'Namestie Majstra Pavla 26',
 		rating: '3',
 		hours: '!NOT DECLARED!',
-		img: 'https://i.imgur.com/w3R1EJW.png',
+		img: '/img/thumbnails/arkada.png',
 		web: 'http://www.arkada.sk/',
 		prices: '€€ - €€€',
 		maps:
@@ -82,7 +82,7 @@ let restaurants = [
 		rating: '3.6',
 		hours: '10AM - 9PM',
 		img:
-			'https://i.imgur.com/okXNZ6s.png',
+			'/img/thumbnails/slovenka.png',
 		prices: '€€ - €€€',
 		maps:
 			'https://www.google.com/maps/place/Re%C5%A1taur%C3%A1cia+Slovenka/@49.027669,20.5904705,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468b292cbb39:0xd4dc0fbbbd7f1cc1!8m2!3d49.027669!4d20.5904705'
@@ -92,7 +92,7 @@ document.getElementById('db').innerHTML = `
 ${restaurants
 	.map(function(restaurant) {
 		return `
-		<div class='container2'>
+		<div class='container'>
         <img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
         <h1 class='name'>${restaurant.name}</h1>
         <div class='text'>
