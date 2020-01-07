@@ -60,28 +60,17 @@ document.getElementById('db').innerHTML = `
 ${monuments
 	.map(function(monument) {
 		return `
-        <div class='container'>
+    <div class='container'>
         <img src='${monument.img}' alt='Image of ${monument.name}'class='image'>
         <h1 class='name'>${monument.name}</h1>
         <div class='text'>
-            <div class="row"> 
-                <i class='fas fa-map-marker-alt'></i>
-                <a href='${monument.maps}' class='map-link'>
-                <p class='adress'>${monument.address}</p>
-                </a>
-            </div>
-
-            <div class="row">
-                <i class="fas fa-dollar-sign"></i> 
-                <p class='prices'>${monument.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
-            </div>
-
-            <div class="row">
-                <i class="fas fa-clock"></i>
-                <p class='clock'>${monument.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
-            </div>
+            <i class='fas fa-map-marker-alt'></i>
+            <a href='${monument.maps}' class='map-link'
+            <p class='adress'>${monument.address}</p></a>
+            <p class='prices'><i class="fas fa-dollar-sign"></i> ${monument.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+            <p class='clock'><i class="fas fa-clock"></i>${monument.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
+            <a class='web' href='${monument.web}'>Web</a>
         </div>
-        <a class='web' href='${monument.web}'>Web</a>
     </div>
     `;
 	})
