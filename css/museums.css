@@ -115,6 +115,10 @@ body {
     div.container {
       height: 44vh;
     }
+
+    .container h1 {
+      font-size: 1.7vw;
+    }
   }
 
   @media (max-width: 1350px) {
