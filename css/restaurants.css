@@ -116,7 +116,7 @@ body {
       height: 44vh;
     }
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1350px) {
     div.container {
       height: auto;
       overflow: hidden;
