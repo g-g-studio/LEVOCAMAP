@@ -6,7 +6,7 @@ let hotels = [
 	{
 		name: 'Hotel u Leva ***',
 		rating: '9.1',
-		address: 'NÁM. MAJSTRA PAVLA 25',
+		address: 'Nám. Majstra Pavla 25',
 		maps:
 			'https://www.google.com/maps/place/Hotel+U+Leva/@49.032783,20.590877,15z/data=!4m8!3m7!1s0x0:0x4c88e8a0767b811f!5m2!4m1!1i2!8m2!3d49.0253985!4d20.5894422?hl=en-US',
 		web: 'https://www.uleva.sk',
@@ -40,7 +40,7 @@ let hotels = [
 		maps:
 			'https://www.google.com/maps/place/Barbakan/@49.0275529,20.5899101,17z/data=!3m1!4b1!4m8!3m7!1s0x473e468b195c93a1:0x21d9f37ecc6e88d9!5m2!4m1!1i2!8m2!3d49.0275529!4d20.5920988?hl=en',
 		web: 'https://www.barbakan.sk/',
-		img: '/img/thumbnails/barbakan.png',
+		img: '../img/thumbnails/barbakan.png',
 		prices: '32€ - 85€'
 	}
 ];

@@ -4,7 +4,7 @@ let monuments = [
         address: 'Namestie Majstra Pavla 1',
         hours: 'Every 45 minutes from 11:15 to 19:15, available only during summer',
         prices: 'Free but you have to get reservation in tower before',
-        img: '/img/thumbnails/church.png',
+        img: '/img/thumbnails/tower.png',
         maps: 'https://www.google.com/maps/place/Ve%C5%BEa+Baziliky+Sv.+Jakuba/@49.0264575,20.5882221,19z/data=!4m8!1m2!2m1!1sVeza+kostol+sv+jakuba!3m4!1s0x0:0x24d0760154c671ad!8m2!3d49.026439!4d20.5887559',
         web:'https://www.facebook.com/vezavlevoci/'
     },
@@ -13,7 +13,7 @@ let monuments = [
         address: 'Námestie Majstra Pavla 53',
         hours: '30 min lecture every hour, more details on web',
         prices: '2€ - 3€',
-        img: '/img/thumbnails/tower.png',
+        img: '/img/thumbnails/church.png',
         maps: 'https://www.google.com/maps/place/Bazilika+sv.+Jakuba/@49.0263194,20.5870016,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468ace115bfb:0xe9a3b36579a2def8!8m2!3d49.0263159!4d20.5891903',
         web:'http://www.chramsvjakuba.sk/'
     },
@@ -60,17 +60,28 @@ document.getElementById('db').innerHTML = `
 ${monuments
 	.map(function(monument) {
 		return `
-    <div class='container'>
+        <div class='container'>
         <img src='${monument.img}' alt='Image of ${monument.name}'class='image'>
         <h1 class='name'>${monument.name}</h1>
         <div class='text'>
-            <i class='fas fa-map-marker-alt'></i>
-            <a href='${monument.maps}' class='map-link'
-            <p class='adress'>${monument.address}</p></a>
-            <p class='prices'><i class="fas fa-dollar-sign"></i> ${monument.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
-            <p class='clock'><i class="fas fa-clock"></i>${monument.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
-            <a class='web' href='${monument.web}'>Web</a>
+            <div class="row"> 
+                <i class='fas fa-map-marker-alt'></i>
+                <a href='${monument.maps}' class='map-link'>
+                <p class='adress'>${monument.address}</p>
+                </a>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-dollar-sign"></i> 
+                <p class='prices'>${monument.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-clock"></i>
+                <p class='clock'>${monument.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
+            </div>
         </div>
+        <a class='web' href='${monument.web}'>Web</a>
     </div>
     `;
 	})

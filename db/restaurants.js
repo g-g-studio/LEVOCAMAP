@@ -1,7 +1,7 @@
 let restaurants = [
 	{
 		name: 'Restauracia u Leva',
-		address: 'NÁM. MAJSTRA PAVLA 25',
+		address: 'Nám. Majstra Pavla 25',
 		rating: '4.5',
 		hours: '10AM - 10PM',
 		img: '/img/thumbnails/uleva.jpg',
@@ -97,9 +97,9 @@ ${restaurants
         <h1 class='name'>${restaurant.name}</h1>
         <div class='text'>
             <div class="row"> 
-			<i class='fas fa-map-marker-alt'></i>
-            <a href='${restaurant.maps}' class='map-link'>
-			<p class='adress'>${restaurant.address}</p>
+				<i class='fas fa-map-marker-alt'></i>
+            	<a href='${restaurant.maps}' class='map-link'>
+				<p class='adress'>${restaurant.address}</p>
 			</a>
             </div>
 

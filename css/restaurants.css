@@ -20,7 +20,7 @@ body {
   div.container{
       background-color: #ffffff;
       max-width: 80%;
-      height: 250px;
+      height: 36.5vh;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 10px;
@@ -30,8 +30,8 @@ body {
 
   .container img {
     float: left;
-    max-width: 35%;
-    /*max-height: 100%;*/
+    max-width: 100%;
+    max-height: 100%;
   }
 
   #arkada {
@@ -39,7 +39,7 @@ body {
   }
 
   .container h1 {
-    font-size: 35px;
+    font-size: 2.3vw;
     font-weight: normal;
     text-transform: none;
     padding: 20px 0 0 20px;
@@ -58,7 +58,7 @@ body {
 
   .row i {
     display: table-cell;
-    font-size: 20px;
+    font-size: 1.3vw;
     padding: 10px;
     text-align: center;
     color: #7271D7;
@@ -69,7 +69,7 @@ body {
     display: table-cell;
     color: #000000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.3vw;
   }
 
   .row a {
@@ -77,7 +77,7 @@ body {
   }
 
   .disclaimer {
-    font-size: 12px;
+    font-size: 0.8vw;
     color: #707070;
     vertical-align: top;
     padding-left: 5px;
@@ -90,7 +90,7 @@ body {
     text-decoration: none;
     border-radius: 20px;
     margin-top: 50px;
-    padding: 10px 35px;
+    padding: 0.7vw 2.5vw;
     margin-left: 35px;
   }
 
@@ -109,4 +109,31 @@ body {
     font-size: 12px;
     color: rgb(255, 255, 255, .9);
     padding-top: 30px;
+  }
+
+  @media (max-width: 1050px) {
+    div.container {
+      height: auto;
+      overflow: hidden;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .container h1 {
+      font-size: 25px;
+    }
+
+    .container img {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+
+    .row p {
+      font-size: 15px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+    }
   }
