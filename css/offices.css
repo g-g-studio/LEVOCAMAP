@@ -111,7 +111,7 @@ body {
     padding-top: 30px;
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1150px) {
     div.container {
       height: auto;
       overflow: hidden;

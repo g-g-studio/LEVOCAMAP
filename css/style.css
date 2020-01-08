@@ -51,7 +51,7 @@ div.image {
 }
 
 .image img {
-  max-width: 1500px;
+  max-width: 50%;
 }
 
 footer {
@@ -72,8 +72,5 @@ footer {
   .title li {
     display: block;
     margin: 30px 0px;
-  }
-  .image img {
-    width:50%;
   }
 }
