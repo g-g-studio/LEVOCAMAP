@@ -20,7 +20,7 @@ body {
   div.container{
       background-color: #ffffff;
       max-width: 80%;
-      height: 36.5vh;
+      height: 300px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 10px;
@@ -111,10 +111,10 @@ body {
     padding-top: 30px;
   }
 
-  @media (max-width: 1450px) {
+  /*@media (max-width: 1450px) {
     div.container {
       height: 44vh;
-    }
+    }*/
 
   @media (max-width: 1350px) {
     div.container {

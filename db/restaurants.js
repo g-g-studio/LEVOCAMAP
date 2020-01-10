@@ -1,6 +1,6 @@
 let restaurants = [
 	{
-		name: 'Restauracia u Leva',
+		name: 'Reštauracia u Leva',
 		address: 'Nám. Majstra Pavla 25',
 		rating: '4.5',
 		hours: '10AM - 10PM',
@@ -11,7 +11,7 @@ let restaurants = [
 			'https://www.google.com/maps/place/Hotel+U+Leva/@49.032783,20.590877,15z/data=!4m8!3m7!1s0x0:0x4c88e8a0767b811f!5m2!4m1!1i2!8m2!3d49.0253985!4d20.5894422?hl=en-US'
 	},
 	{
-		name: 'Restauracia Kupecka Basta',
+		name: 'Reštauracia Kupecka Basta',
 		address: 'Kukucinova 2, Levoča 054 01',
 		rating: '4.5',
 		hours: '10AM - 10PM',
@@ -22,7 +22,7 @@ let restaurants = [
 		prices: '€€ - €€€'
 	},
 	{
-		name: 'Restauracia u 3 Apostolov',
+		name: 'Reštauracia u 3 Apostolov',
 		address: 'Námestie Majstra Pavla 11',
 		rating: '4.1',
 		hours: '9AM - 8PM',
@@ -77,7 +77,7 @@ let restaurants = [
 			'https://www.google.com/maps/place/Hotel+STELA/@49.027304,20.5870073,17z/data=!3m1!4b1!4m8!3m7!1s0x473e46f52ca1046d:0x850c2ebf93b0ed3c!5m2!4m1!1i2!8m2!3d49.027304!4d20.589196?hl=sks://www.google.com/maps/place/Hotel+Arkada/@49.025307,20.5870453,17z/data=!3m1!4b1!4m8!3m7!1s0x473e468aa59baf07:0x9413900393a17931!5m2!4m1!1i2!8m2!3d49.025307!4d20.589234?hl=en'
 	},
 	{
-		name: 'Restauracia Slovenka',
+		name: 'Reštauracia Slovenka',
 		address: 'Námestie Majstra Pavla 6/6',
 		rating: '3.6',
 		hours: '10AM - 9PM',
@@ -105,7 +105,7 @@ ${restaurants
 
 			<div class="row">
 				<i class="fas fa-star"></i>
-				<p class='rating-line'>GOOGLE.COM RATING: <span class='rating'>${restaurant.rating}</span></p>
+				<p class='rating-line'>Google.com rating: <span class='rating'>${restaurant.rating}</span></p>
             </div>
 
 			<div class="row">
