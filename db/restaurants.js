@@ -1,9 +1,22 @@
+/* 
+ZMENA NADPISU PODLA LANG
+*/
+let selected = localStorage.getItem('lang');
+console.log(selected)
+if (selected === 'slovak'){
+	document.getElementsByTagName('h1')[0].innerHTML = 'Restauracie';
+}else{
+	document.getElementsByTagName('h1')[0].innerHTML = 'Restaurants';
+}
+
+
 let restaurants = [
 	{
 		name: 'Reštauracia u Leva',
 		address: 'Nám. Majstra Pavla 25',
 		rating: '4.5',
-		hours: '10AM - 10PM',
+		enhours: '10AM - 10PM',
+		hours: '10:00 - 22:00',
 		img: '/img/thumbnails/uleva.jpg',
 		web: 'https://www.uleva.sk',
 		prices: '€€ - €€€',
@@ -14,7 +27,8 @@ let restaurants = [
 		name: 'Reštauracia Kupecka Basta',
 		address: 'Kukucinova 2, Levoča 054 01',
 		rating: '4.5',
-		hours: '10AM - 10PM',
+		enhours: '10AM - 10PM',
+		hours: '10:00 - 22:00',
 		img: '/img/thumbnails/basta.png',
 		web: 'http://www.kupeckabasta.sk/',
 		maps:
@@ -25,7 +39,8 @@ let restaurants = [
 		name: 'Reštauracia u 3 Apostolov',
 		address: 'Námestie Majstra Pavla 11',
 		rating: '4.1',
-		hours: '9AM - 8PM',
+		enhours: '9AM - 8PM',
+		hours: '9:00 - 20:00',
 		img: '/img/thumbnails/apostol.png',
 		web: 'http://www.restauraciau3apostolov.sk',
 		prices: '€€',
@@ -36,7 +51,8 @@ let restaurants = [
 		name: 'Reštuarácia Pracháreň',
 		address: 'Hradby 3143, 054 01 Levoča',
 		rating: '4.3',
-		hours: '!NOT DECLARED!',
+		enhours: '8AM - 6PM',
+		hours: '8:00 - 16:00',
 		img: '/img/thumbnails/poracharen.png',
 		web: 'https://www.pracharen.sk',
 		prices: '€€ - €€€',
@@ -47,7 +63,8 @@ let restaurants = [
 		name: 'Reštuarácia U Janusa',
 		address: 'Kláštorská 22, 054 01 Levoča',
 		rating: '4.5',
-		hours: '12PM - 10PM',
+		enhours: '12PM - 10PM',
+		hours: '12:00 - 22:00',
 		img: '/img/thumbnails/janus.png',
 		web: 'http://ujanusa.sk/',
 		prices: '€',
@@ -58,7 +75,8 @@ let restaurants = [
 		name: 'Stela',
 		address: 'Namestie Majstra Pavla 55',
 		rating: '4',
-		hours: '!NOT DECLARED!',
+		hours: '8:00 - 20:00',
+		enhours: '8AM - 8PM',
 		img: '/img/thumbnails/stela.png',
 		web: 'http://www.hotelstela.sk/',
 		prices: '€€ - €€€',
@@ -69,7 +87,8 @@ let restaurants = [
 		name: 'Arkada',
 		address: 'Namestie Majstra Pavla 26',
 		rating: '3',
-		hours: '!NOT DECLARED!',
+		hours: '8:00 - 20:00',
+		enhours: '8AM - 8PM',
 		img: '/img/thumbnails/arkada.png',
 		web: 'http://www.arkada.sk/',
 		prices: '€€ - €€€',
@@ -80,7 +99,8 @@ let restaurants = [
 		name: 'Reštauracia Slovenka',
 		address: 'Námestie Majstra Pavla 6/6',
 		rating: '3.6',
-		hours: '10AM - 9PM',
+		enhours: '10AM - 9PM',
+		hours: '10:00 - 21:00',
 		img:
 			'/img/thumbnails/slovenka.png',
 		prices: '€€ - €€€',
@@ -88,7 +108,13 @@ let restaurants = [
 			'https://www.google.com/maps/place/Re%C5%A1taur%C3%A1cia+Slovenka/@49.027669,20.5904705,17z/data=!3m1!4b1!4m5!3m4!1s0x473e468b292cbb39:0xd4dc0fbbbd7f1cc1!8m2!3d49.027669!4d20.5904705'
 	}
 ];
-document.getElementById('db').innerHTML = `
+
+
+
+let lang = localStorage.getItem('lang');
+console.log(lang);
+
+if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${restaurants
 	.map(function(restaurant) {
 		return `
@@ -115,7 +141,7 @@ ${restaurants
 
 			<div class="row">
 				<i class="fas fa-clock"></i>
-				<p class='clock'>${restaurant.hours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
+				<p class='clock'>${restaurant.hours}<span class='disclaimer'>*SKUTOČNÉ OTVÁRACIE HODINY SA MÔŽU LÍŠIŤ</span></p>
 			</div>
 
         </div>
@@ -124,4 +150,41 @@ ${restaurants
     `;
 	})
 	.join('')}
-`;
+`;}else{document.getElementById('db').innerHTML = `
+	${restaurants
+		.map(function(restaurant) {
+			return `
+			<div class='container'>
+			<img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
+			<h1 class='name'>${restaurant.name}</h1>
+			<div class='text'>
+				<div class="row"> 
+					<i class='fas fa-map-marker-alt'></i>
+					<a href='${restaurant.maps}' class='map-link'>
+					<p class='adress'>${restaurant.address}</p>
+				</a>
+				</div>
+	
+				<div class="row">
+					<i class="fas fa-star"></i>
+					<p class='rating-line'>Google.com rating: <span class='rating'>${restaurant.rating}</span></p>
+				</div>
+	
+				<div class="row">
+					<i class="fas fa-dollar-sign"></i> 
+					<p class='prices'>${restaurant.prices}</p>
+				</div>
+	
+				<div class="row">
+					<i class="fas fa-clock"></i>
+					<p class='clock'>${restaurant.enhours}<span class='disclaimer'>*SKUTOČNÉ OTVÁRACIE HODINY SA MÔŽU LÍŠIŤ</span></p>
+				</div>
+	
+			</div>
+			<a class='web' href='${restaurant.web}'>Web</a>
+		</div>
+		`;
+		})
+		.join('')}
+	`;
+}

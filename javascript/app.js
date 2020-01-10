@@ -1,3 +1,4 @@
+
 function colorchange(img) {
 	$(img).each(function() {
 		$('<img/>')[0].src = this;

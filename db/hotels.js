@@ -1,4 +1,16 @@
 /* 
+ZMENA NADPISU PODLA LANG
+*/
+let selected = localStorage.getItem('lang');
+console.log(selected)
+if (selected === 'slovak'){
+	document.getElementsByTagName('h1')[0].innerHTML = 'Hotely';
+}else{
+	document.getElementsByTagName('h1')[0].innerHTML = 'Hotels';
+}
+
+
+/* 
     DATABASE
 */
 
@@ -48,7 +60,41 @@ let hotels = [
     ACTUAL CODE
 */
 
-document.getElementById('db').innerHTML = `
+let lang = localStorage.getItem('lang');
+console.log(lang);
+
+if(lang === 'slovak') {document.getElementById('db').innerHTML = `
+${hotels
+	.map(function(hotel) {
+		return `
+    <div class='container'>
+        <img src='${hotel.img}' alt='Image of ${hotel.name}'class='image' id='${hotel.id}'>
+        <h1 class='name'>${hotel.name}</h1>
+        <div class='text'>
+            <div class="row"> 
+                <i class='fas fa-map-marker-alt'></i>
+                <a href='${hotel.maps}' class='map-link'>
+                <p class='adress'>${hotel.address}</p>
+                </a>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-star"></i>
+                <p class='rating-line'>Booking.com rating: <span class='rating'>${hotel.rating}</span></p>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-dollar-sign"></i>
+                <p class='prices'> ${hotel.prices} <span class='disclaimer'>*SKUTOČNÉ CENY SA MÔŽU LÍŠIŤ</span></p>
+            </div>
+        </div>
+        <a class='web' href='${hotel.web}'>Web</a>
+    </div>
+    `;
+	})
+	.join('')}`
+}else{
+	document.getElementById('db').innerHTML = `
 ${hotels
 	.map(function(hotel) {
 		return `
@@ -77,5 +123,5 @@ ${hotels
     </div>
     `;
 	})
-	.join('')}
-`;
+	.join('')}`
+}
