@@ -61,6 +61,21 @@ footer {
   padding-top: 30px;
 }
 
+  .select {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .select option {
+    color: rgba(0, 0, 0, 0.7);
+    background: white;
+  }
 .transition {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
