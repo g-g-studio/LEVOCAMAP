@@ -20,9 +20,9 @@ function changelang () {
 	let selector = document.getElementById('langselector').value
 	if (selector === 'slovak') {
 		document.getElementById('hotel').innerHTML = 'Hotely'
-		document.getElementById('museum').innerHTML = 'Muzea'
-		document.getElementById('office').innerHTML = 'Urady'
-		document.getElementById('restaurant').innerHTML = 'Restauracie'
+		document.getElementById('museum').innerHTML = 'Múzea'
+		document.getElementById('office').innerHTML = 'Úrady'
+		document.getElementById('restaurant').innerHTML = 'Reštaurácie'
 		document.getElementById('sightseeing').innerHTML = 'Pamiatky'
 	}else{
 		document.getElementById('hotel').innerHTML = 'Hotels'
