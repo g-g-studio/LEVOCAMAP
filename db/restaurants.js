@@ -118,7 +118,7 @@ if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${restaurants
 	.map(function(restaurant) {
 		return `
-		<div class='container'>
+		<div class='container animated zoomIn'>
         <img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
         <h1 class='name'>${restaurant.name}</h1>
         <div class='text'>
@@ -154,7 +154,7 @@ ${restaurants
 	${restaurants
 		.map(function(restaurant) {
 			return `
-			<div class='container'>
+			<div class='container animated zoomIn'>
 			<img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
 			<h1 class='name'>${restaurant.name}</h1>
 			<div class='text'>

@@ -60,7 +60,7 @@ if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${museums
 	.map(function(museum) {
 		return `
-		<div class='container'>
+		<div class='container animated zoomIn'>
 		<img src='${museum.img}' alt='Image of ${museum.name}'class='image'>
 		<h1 class='name'>${museum.name}</h1>
 		<div class='text'>
@@ -90,7 +90,7 @@ ${museums
 ${museums
 	.map(function(museum) {
 		return `
-		<div class='container'>
+		<div class='container animated zoomIn'>
 		<img src='${museum.img}' alt='Image of ${museum.enname}'class='image'>
 		<h1 class='name'>${museum.enname}</h1>
 		<div class='text'>

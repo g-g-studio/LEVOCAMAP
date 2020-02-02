@@ -48,7 +48,7 @@ if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${offices
 	.map(function(office) {
 		return `
-        <div class='container'>
+        <div class='container animated zoomIn'>
         <img src='${office.img}' alt='Image of ${office.name}'class='image'>
         <h1 class='name'>${office.name}</h1>
         <div class='text'>
@@ -73,7 +73,7 @@ ${offices
 ${offices
 	.map(function(office) {
 		return `
-        <div class='container'>
+        <div class='container animated zoomIn'>
         <img src='${office.img}' alt='Image of ${office.enname}'class='image'>
         <h1 class='name'>${office.enname}</h1>
         <div class='text'>

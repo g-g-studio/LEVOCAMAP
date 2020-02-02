@@ -99,7 +99,7 @@ if (lang === 'slovak') {
 ${monuments
 		.map(function(monument) {
 			return `
-        <div class='container'>
+        <div class='container animated zoomIn'>
         <img src='${monument.img}' alt='Image of ${monument.name}'class='image'>
         <h1 class='name'>${monument.name}</h1>
         <div class='text'>
@@ -135,7 +135,7 @@ ${monuments
     ${monuments
 		.map(function(monument) {
 			return `
-        <div class='container'>
+        <div class='container animated zoomIn'>
         <img src='${monument.img}' alt='Image of ${monument.enname}'class='image'>
         <h1 class='name'>${monument.enname}</h1>
         <div class='text'>

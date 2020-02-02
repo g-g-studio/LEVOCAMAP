@@ -9,8 +9,8 @@ let selected = localStorage.getItem('lang');
 console.log(selected)
 if (selected === 'slovak'){
 	document.getElementById("sk").setAttribute("selected", true);
-
 }
+
 
 
 //Funkcia na zmenu jazyka pri lang selecte
@@ -24,12 +24,14 @@ function changelang () {
 		document.getElementById('office').innerHTML = 'Úrady'
 		document.getElementById('restaurant').innerHTML = 'Reštaurácie'
 		document.getElementById('sightseeing').innerHTML = 'Pamiatky'
+		document.getElementsByTagName('h1')[0].innerHTML = 'MAPA LEVOČE';
 	}else{
 		document.getElementById('hotel').innerHTML = 'Hotels'
 		document.getElementById('museum').innerHTML = 'Museums'
 		document.getElementById('office').innerHTML = 'Offices'
 		document.getElementById('restaurant').innerHTML = 'Restaurants'
 		document.getElementById('sightseeing').innerHTML = 'Sightseeing'
+		document.getElementsByTagName("h1")[0].innerHTML = 'MAP OF LEVOČA';
     }
     
 
