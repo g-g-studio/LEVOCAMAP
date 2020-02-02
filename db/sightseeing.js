@@ -120,11 +120,9 @@ ${monuments
                 <p class='clock'>${monument.hours}<span class='disclaimer'>*SKUTOČNÉ OTVÁRACIE HODINY SA MÔŽU LÍŠIŤ</span></p>
             </div>
 
-            <div class="row">
-                <audio controls>
-                <source src='${monument.audio}' type='audio/mpeg'>
-                </audio> 
-            </div>
+			<a href="${monument.audio}">
+				<i class="fas fa-volume-up"></i>
+			</a>		
         </div>
         <a class='web' href='${monument.web}'>Web</a>
     </div>
@@ -156,12 +154,10 @@ ${monuments
             <div class="row">
                 <i class="fas fa-clock"></i>
                 <p class='clock'>${monument.enhours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
-            </div>
-            <div class="row">
-                <audio controls>
-                <source src='${monument.audio}' type='audio/mpeg'>
-            </audio> 
-        </div>
+			</div>
+			<a href="${monument.audio}">
+				<i class="fas fa-volume-up"></i>
+			</a>
         </div>
         <a class='web' href='${monument.web}'>Web</a>
     </div>
