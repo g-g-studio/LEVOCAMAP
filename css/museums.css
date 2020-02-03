@@ -20,7 +20,7 @@ body {
   div.container{
       background-color: #ffffff;
       max-width: 80%;
-      height: 33vh;
+      height: 270px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 10px;
@@ -39,7 +39,7 @@ body {
   }
 
   .container h1 {
-    font-size: 2.3vw;
+    font-size: 2vw;
     font-weight: normal;
     text-transform: none;
     padding: 20px 0 0 20px;
@@ -111,7 +111,17 @@ body {
     padding-top: 30px;
   }
 
-  @media (max-width: 1050px) {
+/*  @media (max-width: 1500px) {
+    div.container {
+      height: 44vh;
+    }*/
+
+    .container h1 {
+      font-size: 1.7vw;
+    }*/
+  }
+
+  @media (max-width: 1350px) {
     div.container {
       height: auto;
       overflow: hidden;

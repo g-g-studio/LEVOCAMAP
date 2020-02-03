@@ -9,33 +9,39 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap&subset=latin-ext"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <script src="https://kit.fontawesome.com/3b88d9aaaa.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="changelang()">
   <!--
         MAP OF LEVOČA
     -->
 
+    <select class="select" name="language" id="langselector">
+      <option value="english" id='en'>English</option>
+      <option value="slovak" id='sk'>Slovak</option>
+    </select>
+
+
   <!--
       Nadpis
     -->
-  <h1>Map of Levoča</h1>
+  <h1 class='nadpis animated bounceInDown'></h1>
 
 
   <!-- BUTTONS -->
-  <div class="title">
+  <div class="title bounceInLeft animated ">
     <ul>
-      <li><a class="title-blue" href="html/hotels.html">Hotels</a></li>
-      <li><a class="title-red" href="html/museums.html">Museums</a></li>
-      <li><a class="title-green" href="html/offices.html">Offices</a></li>
-      <li><a class="title-pink" href="html/restaurants.html">Restaurants</a></li>
-      <li><a class="title-yellow" href="/html/sightseeing.html">Sightseeing</a></li>
+      <li><a class="title-blue" href="html/hotels.html" id='hotel'></a></li>
+      <li><a class="title-red" href="html/museums.html" id='museum'></a></li>
+      <li><a class="title-green" href="html/offices.html" id='office'></a></li>
+      <li><a class="title-pink" href="html/restaurants.html" id='restaurant'></a></li>
+      <li><a class="title-yellow" href="/html/sightseeing.html" id='sightseeing'></a></li>
     </ul>
   </div>
-
   <!-- MAP -->
-  <div class="image">
+  <div class="image animated bounceInRight">
     <img src="img/map_original.png" alt="MAP ORIGINAL" id="map">
   </div>
 
@@ -43,12 +49,13 @@
         Footer
     -->
   <footer>
-    <p>2020 &copy; G&G Studio</p>
+    <p class='animated bounceInUp'>2020 &copy; G&G Studio</p>
   </footer>
 
 
 
   <!-- SCRIPTS -->
+  <script src="/javascript/lang.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="javascript/app.js"></script>
   <script src="https://kit.fontawesome.com/3b88d9aaaa.js" crossorigin="anonymous"></script>

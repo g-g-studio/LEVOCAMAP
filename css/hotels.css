@@ -20,7 +20,7 @@ body {
   div.container{
       background-color: #ffffff;
       max-width: 80%;
-      height: 33vh;
+      height: 300px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 10px;
@@ -111,7 +111,13 @@ body {
     padding-top: 30px;
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1450px) {
+    div.container {
+      height: 270px;
+    }
+  }
+
+  @media (max-width: 1150px) {
     div.container {
       height: auto;
       overflow: hidden;
