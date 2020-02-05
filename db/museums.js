@@ -44,7 +44,7 @@ let museums = [
 let selected = localStorage.getItem('lang');
 console.log(selected)
 if (selected === 'slovak'){
-	document.getElementsByTagName('h1')[0].innerHTML = 'Muzea';
+	document.getElementsByTagName('h1')[0].innerHTML = 'Múzea';
 }else{
 	document.getElementsByTagName('h1')[0].innerHTML = 'Museums';
 }
