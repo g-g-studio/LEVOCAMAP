@@ -26,6 +26,7 @@ body {
       margin-bottom: 10px;
       color: #000000;
       overflow: hidden;
+      position: relative;
   }
 
   .container img {
@@ -88,10 +89,27 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #7271D7;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-top: 50px;
     padding: 0.7vw 2.5vw;
     margin-left: 35px;
+  }
+
+  .fa-volume-up {
+    color: #7271D7;
+    border: 1px solid #7271D7;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+  }
+
+  .fa-volume-up:hover {
+    color: #ffffff;
+    background-color: #7271D7;
+    transition: 0.3s;
   }
 
   .web:hover {
@@ -145,4 +163,21 @@ body {
     .disclaimer {
       font-size: 12px;
     }
+
+    .fa-volume-up {
+      bottom: 2%;
+      right: 5%;
+      font-size: 1.5vw;
+    }
   }
+
+  @media (max-width: 800px) {
+    .web {
+      padding: 1vw 3.5vw;
+    }
+
+    .fa-volume-up {
+      font-size: 2vw;
+    }
+  }
+

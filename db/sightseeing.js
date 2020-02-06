@@ -123,13 +123,12 @@ ${monuments
             <div class="row">
                 <i class="fas fa-clock"></i>
                 <p class='clock'>${monument.hours}<span class='disclaimer'>*SKUTOČNÉ OTVÁRACIE HODINY SA MÔŽU LÍŠIŤ</span></p>
-            </div>
-
-			<a href="${monument.audio}">
-				<i class="fas fa-volume-up"></i>
-			</a>		
-        </div>
-        <a class='web' href='${monument.web}'>Web</a>
+            </div>	
+		</div>	
+		<a href="${monument.audio}">
+			<i class="fas fa-volume-up"></i>
+		</a>
+		<a class='web' href='${monument.web}'>Web</a>	
     </div>
     `;
 		})

@@ -88,7 +88,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #7271D7;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-top: 50px;
     padding: 0.7vw 2.5vw;
     margin-left: 35px;
@@ -140,5 +140,11 @@ body {
 
     .disclaimer {
       font-size: 12px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .web {
+      padding: 1vw 3.5vw;
     }
   }
