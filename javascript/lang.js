@@ -6,11 +6,10 @@ MULTI LANGUAGE
 
 //Select default from local storage
 let selected = localStorage.getItem('lang');
-console.log(selected)
 if (selected === 'slovak'){
 	document.getElementById("sk").setAttribute("selected", true);
 }
-
+let date = new Date();
 
 
 //Funkcia na zmenu jazyka pri lang selecte
@@ -25,6 +24,10 @@ function changelang () {
 		document.getElementById('restaurant').innerHTML = 'Reštaurácie'
 		document.getElementById('sightseeing').innerHTML = 'Pamiatky'
 		document.getElementsByTagName('h1')[0].innerHTML = 'MAPA LEVOČE';
+		console.clear()
+		console.log(`Vitajte na našej stránke. Je ${date.getHours()}:${date.getMinutes()}. Prajeme Vám pekný deň a príjemný zážitok pri spoznávaní Levoče.`);
+		console.log('-M&Š');
+
 	}else{
 		document.getElementById('hotel').innerHTML = 'Hotels'
 		document.getElementById('museum').innerHTML = 'Museums'
@@ -32,11 +35,12 @@ function changelang () {
 		document.getElementById('restaurant').innerHTML = 'Restaurants'
 		document.getElementById('sightseeing').innerHTML = 'Sightseeing'
 		document.getElementsByTagName("h1")[0].innerHTML = 'MAP OF LEVOČA';
+		console.clear()
+		console.log(`Welcome to our site. Local time is ${date.getHours()}:${(date.getMinutes()<10?'0':'') + date.getMinutes()}. We wish you pleasent day and nice experience when exploring Levoča.`);
+		console.log('-M&Š');
     }
     
 
     //Pridanie jazyka do local storage
     localStorage.setItem('lang', selector);
-	console.log(localStorage.getItem('lang'))
-	
 }
