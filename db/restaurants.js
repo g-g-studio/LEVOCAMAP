@@ -124,7 +124,7 @@ ${restaurants
         <div class='text'>
             <div class="row"> 
 				<i class='fas fa-map-marker-alt'></i>
-            	<a href='${restaurant.maps}' class='map-link'>
+            	<a href='${restaurant.maps}' class='map-link' target='_blanck'>
 				<p class='adress'>${restaurant.address}</p>
 			</a>
             </div>
@@ -145,7 +145,7 @@ ${restaurants
 			</div>
 
         </div>
-        <a class='web' href='${restaurant.web}'>Web</a>
+        <a class='web' href='${restaurant.web}' target='_blanck'>Web</a>
     </div>
     `;
 	})
@@ -160,7 +160,7 @@ ${restaurants
 			<div class='text'>
 				<div class="row"> 
 					<i class='fas fa-map-marker-alt'></i>
-					<a href='${restaurant.maps}' class='map-link'>
+					<a href='${restaurant.maps}' class='map-link' target='_blanck'>
 					<p class='adress'>${restaurant.address}</p>
 				</a>
 				</div>
@@ -181,7 +181,7 @@ ${restaurants
 				</div>
 	
 			</div>
-			<a class='web' href='${restaurant.web}'>Web</a>
+			<a class='web' href='${restaurant.web}' target='_blanck'>Web</a>
 		</div>
 		`;
 		})

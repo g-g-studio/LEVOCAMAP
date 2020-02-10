@@ -110,7 +110,7 @@ ${monuments
         <div class='text'>
             <div class="row"> 
                 <i class='fas fa-map-marker-alt'></i>
-                <a href='${monument.maps}' class='map-link'>
+                <a href='${monument.maps}' class='map-link' target='_blanck'>
                 <p class='adress'>${monument.address}</p>
                 </a>
             </div>
@@ -125,10 +125,10 @@ ${monuments
                 <p class='clock'>${monument.hours}<span class='disclaimer'>*SKUTOČNÉ OTVÁRACIE HODINY SA MÔŽU LÍŠIŤ</span></p>
             </div>	
 		</div>	
-		<a href="${monument.audio}">
+		<a href="${monument.audio}" target='_blanck'>
 			<i class="fas fa-volume-up"></i>
 		</a>
-		<a class='web' href='${monument.web}'>Web</a>	
+		<a class='web' href='${monument.web}' target='_blanck'>Web</a>	
     </div>
     `;
 		})
@@ -145,7 +145,7 @@ ${monuments
         <div class='text'>
             <div class="row"> 
                 <i class='fas fa-map-marker-alt'></i>
-                <a href='${monument.maps}' class='map-link'>
+                <a href='${monument.maps}' class='map-link' target='_blanck'>
                 <p class='adress'>${monument.address}</p>
                 </a>
             </div>
@@ -159,11 +159,11 @@ ${monuments
                 <i class="fas fa-clock"></i>
                 <p class='clock'>${monument.enhours}<span class='disclaimer'>*ACTUAL OPENING HOURS MAY VARY</span></p>
 			</div>
-			<a href="${monument.enaudio}">
+			<a href="${monument.enaudio}" target='_blanck'>
 				<i class="fas fa-volume-up"></i>
 			</a>
         </div>
-        <a class='web' href='${monument.web}'>Web</a>
+        <a class='web' href='${monument.web}' target='_blanck'>Web</a>
     </div>
     `;
 		})

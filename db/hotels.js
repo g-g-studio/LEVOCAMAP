@@ -73,7 +73,7 @@ ${hotels
         <div class='text'>
             <div class="row"> 
                 <i class='fas fa-map-marker-alt'></i>
-                <a href='${hotel.maps}' class='map-link'>
+                <a href='${hotel.maps}' class='map-link' target='_blanck'>
                 <p class='adress'>${hotel.address}</p>
                 </a>
             </div>
@@ -88,7 +88,7 @@ ${hotels
                 <p class='prices'> ${hotel.prices} <span class='disclaimer'>*SKUTOČNÉ CENY SA MÔŽU LÍŠIŤ</span></p>
             </div>
         </div>
-        <a class='web' href='${hotel.web}'>Web</a>
+        <a class='web' href='${hotel.web}' target='_blanck'>Web</a>
     </div>
     `;
 	})
@@ -104,7 +104,7 @@ ${hotels
         <div class='text'>
             <div class="row"> 
                 <i class='fas fa-map-marker-alt'></i>
-                <a href='${hotel.maps}' class='map-link'>
+                <a href='${hotel.maps}' class='map-link' target='_blanck'>
                 <p class='adress'>${hotel.address}</p>
                 </a>
             </div>
@@ -119,7 +119,7 @@ ${hotels
                 <p class='prices'> ${hotel.prices} <span class='disclaimer'>*ACTUAL PRICES MAY VARY</span></p>
             </div>
         </div>
-        <a class='web' href='${hotel.web}'>Web</a>
+        <a class='web' href='${hotel.web}' target='_blanck'>Web</a>
     </div>
     `;
 	})

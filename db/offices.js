@@ -54,7 +54,7 @@ ${offices
         <div class='text'>
             <div class="row"> 
                 <i class='fas fa-map-marker-alt'></i>
-                <a href='${office.maps}' class='map-link'>
+                <a href='${office.maps}' class='map-link' target='_blanck'>
                 <p class='adress'>${office.address}</p>
                 </a>
             </div>
@@ -64,7 +64,7 @@ ${offices
                  <p class='phone'>${office.phone}</p>
             </div>
         </div>
-        <a class='web' href='${office.web}'>Web</a>
+        <a class='web' href='${office.web}' target='_blanck'>Web</a>
     </div>
     `;
 	})
@@ -79,7 +79,7 @@ ${offices
         <div class='text'>
             <div class="row"> 
                 <i class='fas fa-map-marker-alt'></i>
-                <a href='${office.maps}' class='map-link'>
+                <a href='${office.maps}' class='map-link' target='_blanck'>
                 <p class='adress'>${office.address}</p>
                 </a>
             </div>
@@ -89,7 +89,7 @@ ${offices
                  <p class='phone'>${office.phone}</p>
             </div>
         </div>
-        <a class='web' href='${office.web}'>Web</a>
+        <a class='web' href='${office.web}' target='_blanck'>Web</a>
     </div>
     `;})
 	.join('')}

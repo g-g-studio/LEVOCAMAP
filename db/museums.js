@@ -66,7 +66,7 @@ ${museums
 		<div class='text'>
             <div class="row"> 
 				<i class='fas fa-map-marker-alt'></i>
-            	<a href='${museum.maps}' class='map-link'>
+            	<a href='${museum.maps}' class='map-link' target='_blanck'>
 				<p class='adress'>${museum.address}</p></a>
                 </a>
             </div>
@@ -81,7 +81,7 @@ ${museums
 			<p class='phone'>${museum.phone}</p>
             </div>
         </div>
-        <a class='web' href='${museum.web}'>Web</a>
+        <a class='web' href='${museum.web}' target='_blanck'>Web</a>
     </div>
     `;
 	})
@@ -96,7 +96,7 @@ ${museums
 		<div class='text'>
             <div class="row"> 
 				<i class='fas fa-map-marker-alt'></i>
-            	<a href='${museum.maps}' class='map-link'>
+            	<a href='${museum.maps}' class='map-link' target='b_lanck'>
 				<p class='adress'>${museum.address}</p></a>
                 </a>
             </div>
@@ -111,7 +111,7 @@ ${museums
 			<p class='phone'>${museum.phone}</p>
             </div>
         </div>
-        <a class='web' href='${museum.web}'>Web</a>
+        <a class='web' href='${museum.web}' target='_blanck'>Web</a>
     </div>
     `;
 	})
