@@ -1,0 +1,30 @@
+/* TEAM */
+
+Name: MFoxx-
+Contact: mgally [at] outlook.com
+Twitter: themichalgally
+From: Levoca, Slovakia
+
+Name: Darkoss
+Contact: gavula.simon [at] gmail.com
+Twitter: MojeMeno
+From: Levoca, Slovakia
+
+/* THANKS */
+
+Galina Kacejova
+For big support and financial help.
+
+Stefan Placko - For narration in Slovak
+Jozef Fabis - For narration in English
+
+/* SITE */
+
+Last update:  TBD
+Version: 1.0.1
+Language: English, Slovak
+Doctype: HTML5
+IDEs used: VS Code
+Hosting provided by WebSupport
+
+
