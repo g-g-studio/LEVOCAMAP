@@ -9,6 +9,7 @@ if (selected === 'slovak'){
 	document.getElementsByTagName('h1')[0].innerHTML = 'Restaurants';
 }
 
+AOS.init();
 
 let restaurants = [
 	{
@@ -118,7 +119,7 @@ if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${restaurants
 	.map(function(restaurant) {
 		return `
-		<div class='container animated zoomIn'>
+		<div class='container' data-aos="fade-right">
         <img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
         <h1 class='name'>${restaurant.name}</h1>
         <div class='text'>
@@ -154,7 +155,7 @@ ${restaurants
 	${restaurants
 		.map(function(restaurant) {
 			return `
-			<div class='container animated zoomIn'>
+			<div class='container' data-aos="fade-right">
 			<img src='${restaurant.img}' alt='Image of ${restaurant.name}'class='image'>
 			<h1 class='name'>${restaurant.name}</h1>
 			<div class='text'>

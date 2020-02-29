@@ -9,6 +9,8 @@ if (selected === 'slovak') {
 	document.getElementsByTagName('h1')[0].innerHTML = 'Sightseeing';
 }
 
+AOS.init();
+
 let monuments = [
 	{
 		enname: 'Tower of Saint Jacob Church',
@@ -104,7 +106,7 @@ if (lang === 'slovak') {
 ${monuments
 		.map(function(monument) {
 			return `
-        <div class='container animated zoomIn'>
+        <div class='container' data-aos="fade-right">
         <img src='${monument.img}' alt='Image of ${monument.name}'class='image'>
         <h1 class='name'>${monument.name}</h1>
         <div class='text'>
@@ -139,7 +141,7 @@ ${monuments
     ${monuments
 		.map(function(monument) {
 			return `
-        <div class='container animated zoomIn'>
+        <div class='container' data-aos="fade-right">
         <img src='${monument.img}' alt='Image of ${monument.enname}'class='image'>
         <h1 class='name'>${monument.enname}</h1>
         <div class='text'>

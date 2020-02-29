@@ -49,6 +49,7 @@ if (selected === 'slovak'){
 	document.getElementsByTagName('h1')[0].innerHTML = 'Museums';
 }
 
+AOS.init();
 
 /*
     Taking text from DB in multiple languages
@@ -60,7 +61,7 @@ if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${museums
 	.map(function(museum) {
 		return `
-		<div class='container animated zoomIn'>
+		<div class='container' data-aos="fade-right">
 		<img src='${museum.img}' alt='Image of ${museum.name}'class='image'>
 		<h1 class='name'>${museum.name}</h1>
 		<div class='text'>
@@ -90,7 +91,7 @@ ${museums
 ${museums
 	.map(function(museum) {
 		return `
-		<div class='container animated zoomIn'>
+		<div class='container' data-aos="fade-right">
 		<img src='${museum.img}' alt='Image of ${museum.enname}'class='image'>
 		<h1 class='name'>${museum.enname}</h1>
 		<div class='text'>

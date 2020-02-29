@@ -10,6 +10,9 @@ if (selected === 'slovak'){
 }
 
 
+AOS.init();
+
+
 /* 
     DATABASE
 */
@@ -67,7 +70,7 @@ if(lang === 'slovak') {document.getElementById('db').innerHTML = `
 ${hotels
 	.map(function(hotel) {
 		return `
-    <div class='container animated zoomIn'>
+    <div class='container' data-aos="fade-right">
         <img src='${hotel.img}' alt='Image of ${hotel.name}'class='image' id='${hotel.id}'>
         <h1 class='name'>${hotel.name}</h1>
         <div class='text'>
@@ -98,7 +101,7 @@ ${hotels
 ${hotels
 	.map(function(hotel) {
 		return `
-    <div class='container animated zoomIn'>
+    <div class='container' data-aos="fade-right">
         <img src='${hotel.img}' alt='Image of ${hotel.name}'class='image' id='${hotel.id}'>
         <h1 class='name'>${hotel.name}</h1>
         <div class='text'>
