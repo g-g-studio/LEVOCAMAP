@@ -9,6 +9,7 @@ if (selected === 'slovak') {
 	document.getElementsByTagName('h1')[0].innerHTML = 'Sightseeing';
 }
 
+console.clear();
 AOS.init();
 
 let monuments = [

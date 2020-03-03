@@ -9,6 +9,7 @@ if (selected === 'slovak'){
 	document.getElementsByTagName('h1')[0].innerHTML = 'Offices';
 }
 
+console.clear();
 AOS.init();
 
 let offices = [

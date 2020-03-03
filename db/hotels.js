@@ -9,7 +9,7 @@ if (selected === 'slovak'){
 	document.getElementsByTagName('h1')[0].innerHTML = 'Hotels';
 }
 
-
+console.clear();
 AOS.init();
 
 

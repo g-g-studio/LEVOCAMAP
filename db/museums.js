@@ -49,6 +49,7 @@ if (selected === 'slovak'){
 	document.getElementsByTagName('h1')[0].innerHTML = 'Museums';
 }
 
+console.clear();
 AOS.init();
 
 /*

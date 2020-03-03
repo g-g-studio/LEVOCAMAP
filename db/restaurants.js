@@ -9,6 +9,7 @@ if (selected === 'slovak'){
 	document.getElementsByTagName('h1')[0].innerHTML = 'Restaurants';
 }
 
+console.clear();
 AOS.init();
 
 let restaurants = [
