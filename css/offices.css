@@ -121,6 +121,7 @@ body {
 
     .container h1 {
       font-size: 25px;
+      text-align: left;
     }
 
     .container img {
